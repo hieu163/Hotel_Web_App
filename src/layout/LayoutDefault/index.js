@@ -15,8 +15,7 @@ const LayoutDefault = () => {
       <Outlet />
 
       <Footer />
-
-
+      
     </>
   )
 }

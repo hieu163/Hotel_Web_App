@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
 }
 
 ul{
@@ -14,7 +15,6 @@ ul{
     
 a{
     text-decoration: none;
-    font-family: "Noto Sans", sans-serif;
     color: #000;
     font-weight: 400;
     font-size: 18px;

@@ -1,9 +1,10 @@
-const Register = () => {
+const Register = (props) => {
+    const {swap} = props;
     return (
         <>
             <div className="register-container" id="register">
                 <div className="top">
-                    <span>Have an account? <a href="#" onClick>Login</a></span>
+                    <span>Have an account? <a href="#" onClick={swap}>Login</a></span>
                     <header>Sign Up</header>
                 </div>
                 <div className="two-forms">
@@ -40,4 +41,4 @@ const Register = () => {
         </>
     )
 }
-export default Register
+export default Register;

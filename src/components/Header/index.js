@@ -1,8 +1,15 @@
 
+import { useState } from "react";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { Link, NavLink, Outlet } from "react-router-dom";
-
+import Booking from "../Booking";
 const Header = () => {
+    const [booking, setBooking] = useState(false);
+
+    const handeOnclick = () => {
+        setBooking(!booking)
+    }
+
     return (
         <>
             <header className="header">
@@ -21,6 +28,7 @@ const Header = () => {
                                         color: "#998465",
                                     };
                                 }}
+                                onClick={handeOnclick}
                             >BOOK</NavLink>
                         </li>
                         <li>
@@ -37,7 +45,22 @@ const Header = () => {
                 <div className="header__rewards">
                     Hotel rewards
                 </div>
+                {booking && (
+                    <>
+                    <div className="bookingBorder">
+                        <Booking style={
+                            {
+                                backgroundColor: "#A99983",
+                            }
+                        } 
+                        />
+                    </div>
+                    </>
+                )
+
+                }
             </header>
+            
         </>
     )
 }

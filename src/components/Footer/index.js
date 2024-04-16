@@ -37,7 +37,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="footer__logo col-xxl-6">
                             <img src={footerLogo}></img>
-                            <div class="footer__hotelName">
+                            <div className="footer__hotelName">
                                 <p>HOTEL LOTTE</p>
                                 <p>
                                     30, EULJI-RO, JUNG-GU, SEOUL, KOREA, 04533

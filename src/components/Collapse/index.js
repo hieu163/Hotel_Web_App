@@ -14,7 +14,7 @@ import { getDomain } from "../../utils/domain"
 const CollapseHome = () => {
   const domainUrl = getDomain();
 
-  var url = domainUrl+"/static/media/"
+  var url = domainUrl + "/static/media/"
   var resort = url + "bg1.8ae77447d031137cf9f2.webp"
   var city = url + "bg2.2f12d99009a6d5cecc18.webp"
   var hotel = url + "bg3.96a68973e6372154d23f.webp"

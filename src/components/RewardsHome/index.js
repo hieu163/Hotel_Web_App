@@ -3,7 +3,7 @@ import "./rewards.css"
 const RewardsHome = () => {
     return (
         <>
-            <div class="rewards">
+            <div className="rewards">
                 <div className="container">
                     <div className="rewards__image">
                         <img src={rewards} />
